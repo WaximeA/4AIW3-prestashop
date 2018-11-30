@@ -63,8 +63,8 @@
                 </ul>
               {/block}
 
-              {block name='product_cover_thumbnails'}
-                {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+              {block name='product_cover'}
+                {include file='catalog/_partials/product-cover.tpl'}
               {/block}
               <div class="scroll-box-arrows">
                 <i class="material-icons left">&#xE314;</i>
@@ -77,6 +77,9 @@
         </div>
         <div class="col-md-6">
           {block name='page_header_container'}
+              {block name='product_thumbnails'}
+                  {include file='catalog/_partials/product-thumbnails.tpl'}
+              {/block}
             {block name='page_header'}
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}

@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="images-container">
-  {block name='product_cover'}
+  {block name='product_cover_thumbnails'}
     <div class="product-cover">
       {if $product.cover}
         <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
