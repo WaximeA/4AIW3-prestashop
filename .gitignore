@@ -17,6 +17,7 @@
 /src/log/*
 *sitemap.xml
 /src/themes/*/cache/
+/src/themes/*/_dev/node_modules
 /src/modules/*/config*.xml
 
 # Site content
