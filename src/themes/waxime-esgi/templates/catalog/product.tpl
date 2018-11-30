@@ -84,10 +84,6 @@
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
-          {block name='product_prices'}
-            {include file='catalog/_partials/product-prices.tpl'}
-          {/block}
-
           <div class="product-information">
             {block name='product_description_short'}
               <div id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>

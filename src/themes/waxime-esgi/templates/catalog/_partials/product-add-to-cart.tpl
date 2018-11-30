@@ -23,6 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-add-to-cart">
+  {block name='product_prices'}
+    {include file='catalog/_partials/product-prices.tpl'}
+  {/block}
   {if !$configuration.is_catalog}
     {block name='product_add_to_cart'}
       <div class="product-quantity clearfix">
