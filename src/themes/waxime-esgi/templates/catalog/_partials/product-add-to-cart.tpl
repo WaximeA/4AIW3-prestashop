@@ -24,22 +24,8 @@
  *}
 <div class="product-add-to-cart">
   {if !$configuration.is_catalog}
-    <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
-
-    {block name='product_quantity'}
+    {block name='product_add_to_cart'}
       <div class="product-quantity clearfix">
-        <div class="qty">
-          <input
-            type="text"
-            name="qty"
-            id="quantity_wanted"
-            value="{$product.quantity_wanted}"
-            class="input-group"
-            min="{$product.minimal_quantity}"
-            aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
-          >
-        </div>
-
         <div class="add">
           <button
             class="btn btn-primary add-to-cart"

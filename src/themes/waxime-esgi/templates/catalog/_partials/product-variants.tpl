@@ -66,4 +66,9 @@
     </div>
     {/if}
   {/foreach}
+  <div class="clearfix product-variants-item">
+  {block name='product_quantity'}
+    {include file='catalog/_partials/product-quantity.tpl'}
+  {/block}
+  </div>
 </div>
