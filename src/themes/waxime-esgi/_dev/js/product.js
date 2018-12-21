@@ -114,4 +114,14 @@ $(document).ready(function () {
       });
     });
   }
+
+
+  function showLoad() {
+    $('.product-cover .layer').css('transition','all 0.4s');
+    $('.product-cover .layer').css('opacity', 1);
+    $('.product-cover').css('pointer-events', 'none');
+    $('.product-cover .zoom-in').html('sync');
+    $('.thumb-container').css('transition', 'all 0.4s');
+    $('.thumb-container').css('opacity', 1);
+  }
 });
