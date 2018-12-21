@@ -24,7 +24,7 @@
  *}
 {if $page.admin_notifications}
   <div class="alert alert-warning row" role="alert">
-    <div class="container-fuild">
+    <div class="container">
       <div class="row">
         {foreach $page.admin_notifications as $notif}
           <div class="col-sm-12">
