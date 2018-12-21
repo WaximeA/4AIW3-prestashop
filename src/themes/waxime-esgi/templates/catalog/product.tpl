@@ -63,9 +63,11 @@
                 </ul>
               {/block}
 
-              {block name='product_cover'}
-                {include file='catalog/_partials/product-cover.tpl'}
-              {/block}
+              <div class="product-cover-only">
+                  {block name='product_cover'}
+                    {include file='catalog/_partials/product-cover.tpl'}
+                  {/block}
+              </div>
               <div class="scroll-box-arrows">
                 <i class="material-icons left">&#xE314;</i>
                 <i class="material-icons right">&#xE315;</i>
@@ -77,9 +79,11 @@
         </div>
         <div class="col-md-6">
           {block name='page_header_container'}
-              {block name='product_thumbnails'}
-                  {include file='catalog/_partials/product-thumbnails.tpl'}
-              {/block}
+              <div class="product-thumbnails-only">
+                  {block name='product_thumbnails'}
+                      {include file='catalog/_partials/product-thumbnails.tpl'}
+                  {/block}
+              </div>
             {block name='page_header'}
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}

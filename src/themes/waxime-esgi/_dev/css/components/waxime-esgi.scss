@@ -2,3 +2,16 @@
 #wrapper {
   background: none !important;
 }
+
+/*** Fix duplicate product cover & thumbnail ***/
+.product-cover-only {
+  .thumb-container {
+    display: none !important;
+  }
+}
+
+.product-thumbnails-only {
+  .product-cover {
+    display: none !important;
+  }
+}
