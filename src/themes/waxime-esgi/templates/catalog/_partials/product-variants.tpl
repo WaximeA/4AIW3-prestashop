@@ -23,6 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-variants">
+  <div class="clearfix product-variants-item">
+    {block name='product_quantity'}
+      {include file='catalog/_partials/product-quantity.tpl'}
+    {/block}
+  </div>
   {foreach from=$groups key=id_attribute_group item=group}
     {if !empty($group.attributes)}
     <div class="clearfix product-variants-item">
@@ -66,9 +71,4 @@
     </div>
     {/if}
   {/foreach}
-  <div class="clearfix product-variants-item">
-  {block name='product_quantity'}
-    {include file='catalog/_partials/product-quantity.tpl'}
-  {/block}
-  </div>
 </div>
