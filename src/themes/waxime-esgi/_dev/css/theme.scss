@@ -27,6 +27,7 @@
 @import "components/errors";
 @import "components/customization-modal";
 @import "components/sitemap";
+@import "components/waxime-esgi";
 /*** HEADER ***/
 #header {
   background: white;
@@ -295,7 +296,6 @@
     padding-bottom: 0;
   }
 }
-
 @include media-breakpoint-down(sm) {
   #wrapper {
     box-shadow: none;
@@ -312,10 +312,7 @@
       margin-bottom: 0.625rem;
       color: $gray-darker;
       .top-logo {
-        line-height: 50px;
-        vertical-align: middle;
-        width: 200px;
-        margin: 0 auto;
+        padding-top: 11px;
         a {
           img {
             max-height: 50px;
@@ -351,6 +348,15 @@
       padding-bottom: 0;
       a[data-depth="0"] {
         color: $gray-darker;
+      }
+      .search-widget {
+        width: 100%;
+      }
+    }
+    &.is-open {
+      background-color: white;
+      .header-top {
+        background-color: white;
       }
     }
   }
