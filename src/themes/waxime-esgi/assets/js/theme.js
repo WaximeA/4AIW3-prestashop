@@ -2397,6 +2397,10 @@ var _prestashop2 = _interopRequireDefault(_prestashop);
   coverImage();
   imageScrollBox();
 
+  _prestashop2['default'].on('updateProduct', function (event) {
+    showLoad();
+  });
+
   _prestashop2['default'].on('updatedProduct', function (event) {
     createInputFile();
     coverImage();

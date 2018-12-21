@@ -15,3 +15,104 @@
     display: none !important;
   }
 }
+
+/*** PRODUCT VARIANTS ***/
+.product-variants {
+  width: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  .product-variants-item {
+    display: flex;
+    margin-right: 15%;
+    span {
+      margin-right: 5px;
+    }
+    ul, .product-quantity {
+      display: flex;
+      flex: auto
+    }
+    .input-group {
+      display: flex;
+    }
+    .control-label {
+
+    }
+  }
+}
+
+/*** PRODUCT ADD TO CART ***/
+.product-add-to-cart {
+  float: right;
+  .add-to-cart {
+    background-color: #000;
+  }
+  .product-prices {
+    display: flex;
+    .current-price, .tax-shipping-delivery-label {
+      font-size: 20px;
+      color: #000000;
+    }
+    .current-price span:first-child {
+      margin-right: 10px;
+    }
+    .product-discount, .discount {
+      display: none !important;
+    }
+  }
+}
+
+/*** SOCIAL SHARING ***/
+.social-sharing {
+  span {
+    display: none;
+  }
+  li {
+    box-shadow: none !important;
+  }
+}
+
+/*** BLOCK REASSURANCE ***/
+#block-reassurance {
+  box-shadow: none !important;
+  ul {
+    display: inline-flex;
+  }
+}
+
+/*** TABS ***/
+.tabs {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  .nav-tabs {
+    border-bottom: #7a7a7a solid 2px;
+    .active,  .nav-item a:hover {
+      color: #000 !important;
+      border-bottom: #000 solid 2px !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+/*** CATEGORY ***/
+
+#left-column {
+  background-color: #F2F2F2 !important;
+  padding-top: 20px !important;
+}
+
+.block-category, .block-categories, #search_filters_wrapper, #search_filters, .select-title, .product-miniature, .thumbnail-container #products .thumbnail-container, .featured-products .thumbnail-container, .product-miniature, .thumbnail-container{
+  box-shadow: none !important;
+}
+
+.carousel, .carousel-inner {
+  height: 70vh !important;
+}
+
+.products-section-title {
+  padding: 100px !important;
+  margin: 100px !important;
+}
