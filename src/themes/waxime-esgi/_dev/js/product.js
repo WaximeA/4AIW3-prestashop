@@ -31,6 +31,10 @@ $(document).ready(function () {
   coverImage();
   imageScrollBox();
 
+  prestashop.on('updateProduct', function (event) {
+    showLoad()
+  });
+
   prestashop.on('updatedProduct', function (event) {
     createInputFile();
     coverImage();
